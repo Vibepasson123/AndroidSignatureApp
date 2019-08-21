@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+
+    tools:background="?attr/actionModeBackground"
+    tools:context=".review">
+
+    <Button
+        android:id="@+id/sad"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:background="@drawable/sd2"
+        android:onClick="toast"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/goodBtn"
+        app:layout_constraintEnd_toStartOf="@+id/goodBtn"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goodBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/penRoyalBlue"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/verysad"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:background="@drawable/sd1"
+        android:onClick="toast"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/goodBtn"
+        app:layout_constraintEnd_toStartOf="@+id/goodBtn"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goodBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/penRoyalBlue"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/goodBtn"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/smile4"
+        android:onClick="toast"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431"
+        app:srcCompat="@drawable/sd4"
+        tools:ignore="OnClick" />
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smile_rating"
+        android:layout_width="1dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:background="@drawable/sd3"
+        android:onClick="toast"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/goodBtn"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goodBtn"
+        app:srcCompat="@color/penRoyalBlue"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/greatBtn"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/smile5"
+
+        android:onClick="toast"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toEndOf="@+id/goodBtn"
+        app:layout_constraintTop_toTopOf="@+id/goodBtn"
+        app:srcCompat="@drawable/sd5"
+        tools:ignore="OnClick" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="430dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sd6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+</android.support.constraint.ConstraintLayout>
